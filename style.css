@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: sans-serif;
+}
+.overallcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* background-color: blue; */
+  width: 40%;
+  /* height: 70vh; */
+  margin: 20px auto;
+  grid-template-rows: 1fr 1fr;
+}
+.grid1 {
+  background-color: white;
+  padding: 20px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  padding-bottom: 10px;
+}
+.grid2 {
+  /* background-color: green; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.grid2a {
+  background-color: hsl(179, 59%, 40%);
+  padding: 20px;
+  border-bottom-left-radius: 12px;
+}
+.grid2b {
+  background-color: hsl(179, 62%, 43%);
+  padding: 20px;
+  border-bottom-right-radius: 12px;
+}
+.grid1 h3 {
+  /* font-family: sans-serif; */
+  font-size: medium;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  color: hsl(179, 62%, 43%);
+}
+.grid1 h4 {
+  color: hsl(71, 73%, 54%);
+  padding-bottom: 10px;
+  font-size: small;
+}
+.grid1 p {
+  font-size: smaller;
+  line-height: 25px;
+  color: hsl(218, 22%, 67%);
+}
+.grid2a h3 {
+  color: hsl(204, 43%, 93%);
+  font-size: small;
+  padding-bottom: 20px;
+}
+.cash {
+  /* color: hsl(204, 43%, 93%); */
+  font-size: x-large;
+  padding-right: 5px;
+  color: white;
+}
+.per {
+  font-size: small;
+  color: hsl(179, 91%, 42%);
+}
+.access {
+  color: hsl(179, 66%, 63%);
+  font-size: small;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.sign {
+  color: white;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 2px 2px 20px 0.1px hsl(240, 1%, 34%);
+  border: none;
+  background-color: hsl(71, 87%, 50%);
+  border-radius: 5px;
+}
+.grid2b h3 {
+  font-size: small;
+  padding-bottom: 20px;
+  color: hsl(204, 43%, 93%);
+}
+.grid2b p {
+  font-size: smaller;
+  color: hsl(204, 43%, 93%);
+  line-height: 20px;
+  word-spacing: 5px;
+}
+@media screen and (min-width: 300px) and (max-width: 520px) {
+  .overallcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid2a {
+    border-radius: 0px;
+  }
+  .grid2b {
+    border-bottom-left-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 521px) and (max-width: 999px) {
+  .overallcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* height: ; */
+  }
+  .grid2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid2a {
+    border-radius: 0px;
+  }
+  .grid2b {
+    border-bottom-left-radius: 12px;
+  }
+}
